@@ -33,3 +33,20 @@ for lis in res_:
         result.append(cor)
 result_ = ''.join(str(item) for item in result)
 print('Пароль:', result_)
+
+
+
+
+import random
+
+number = random.randint(3,21)
+
+list = []
+for i in range(1, number):
+    for j in range(1, number):
+        if i >= j:
+            continue
+        if number % (i + j) == 0:
+            list.append(i)
+            list.append(j)
+print(list)
